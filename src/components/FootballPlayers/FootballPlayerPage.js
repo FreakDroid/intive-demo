@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import FootballPlayerList from './FootballPlayerList';
 
 class FootballPlayerPage extends React.Component{
 
@@ -21,6 +22,8 @@ class FootballPlayerPage extends React.Component{
                         <input type="text" />
                         <input type="submit" value="test"/>
                     </form>
+                    
+                    <FootballPlayerList footballPlayers={}/>
                 </div>
             </div>
         );
