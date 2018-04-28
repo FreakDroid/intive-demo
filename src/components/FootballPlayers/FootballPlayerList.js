@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import FootballPlayerListRow from './FootballPlayerListRow';
 
 const FootballPlayerList = ({footballPlayers}) =>{
@@ -6,15 +6,17 @@ const FootballPlayerList = ({footballPlayers}) =>{
     <table className="table">
       <thead>
         <tr>
-          <th>Firts Name</th>
-          <th>Last Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
+          <th>Player</th>
+          <th>Position</th>
+          <th>Team</th>
+          <th>Age</th>
         </tr>
       </thead>
       <tbody>
-      {footballPlayers.map(player=>
-          <FootballPlayerListRow key={player.id} player={player} />)}
+      {
+        footballPlayers.map((player, i)=>
+          <FootballPlayerListRow key={i++} player={player} />)
+      }
       </tbody>
     </table>
   );

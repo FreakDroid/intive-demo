@@ -14,6 +14,7 @@
   "author": "Wilfredo Pérez",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
     "install": "^0.11.0",

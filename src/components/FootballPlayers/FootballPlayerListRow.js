@@ -6,7 +6,7 @@ const FootPlayerListRow = ({player}) =>{
     <tr>
       <td>{player.name}</td>
       <td>{player.position}</td>
-      <td>{player.team}</td> 
+      <td>{player.nationality}</td> 
       <td>{player.age}</td>   
     </tr>
   );
